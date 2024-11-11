@@ -31,7 +31,7 @@ export interface FooterProps {
 
 export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
   return (
-    <div className="bg-opacity-10 bg-textgreen h-full backdrop-blur-md rounded-tr-[10px] rounded-tl-[10px] p-4">
+    <div className="bg-opacity-10 bg-black h-full backdrop-blur-md rounded-tr-[20px] rounded-tl-[20px] p-4">
       <div className="grid  md:grid-cols-2">
         {/* photographer credits */}
         <div className="grid grid-cols-[15%,85%] justify-center items-center gap-2">
@@ -43,19 +43,19 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
           </div>
 
           <div className="pt-1">
-            <h1 className="text-white">
+            <h1 className="text-textgreen">
               {photogphrDetails?.photoghprFirmName}
             </h1>
-            <p className="text-white">{photogphrDetails?.description}</p>
-            <p className="text-white">
+            <p className="text-textgreen">{photogphrDetails?.description}</p>
+            <p className="text-textgreen">
               <span>Address: </span>
               {photogphrDetails?.address}
             </p>
-            <p className="text-white">
+            <p className="text-textgreen">
               <span>Mobile: </span>
               {photogphrDetails?.contactnumber}
             </p>
-            <p className="break-all whitespace-normal text-white">
+            <p className="break-all whitespace-normal text-textgreen">
               <span>Email: </span>
               {photogphrDetails?.email}
             </p>
@@ -93,21 +93,21 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
           </div>
 
           <div className="pt-1">
-            <h1 className="text-white">{devDetails?.companyName}</h1>
-            <p className="text-white">{devDetails?.description}</p>
-            <p className="text-white">
+            <h1 className="text-textgreen">{devDetails?.companyName}</h1>
+            <p className="text-textgreen">{devDetails?.description}</p>
+            <p className="text-textgreen">
               <span>Address: </span>
               {devDetails?.address}
             </p>
-            <p className="text-white">
+            <p className="text-textgreen">
               <span>Mobile: </span>
               {devDetails?.contactnumber}
             </p>
-            <p className="break-all whitespace-normal text-white">
+            <p className="break-all whitespace-normal text-textgreen">
               <span>Email: </span>
               {devDetails?.email}
             </p>
-            <p className="break-all whitespace-normal text-white">
+            <p className="break-all whitespace-normal text-textgreen">
               <span>Music: </span>
               {devDetails?.aiMusic}
             </p>
@@ -138,8 +138,8 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
         {/* rights reserved */}
       </div>
       <div className="flex justify-center items-center w-full">
-        <p className="text-white">All Rights Reserved</p>
-        <CopyrightIcon className="h-[8px] w-[8px] text-white" />
+        <p className="text-textgreen">All Rights Reserved</p>
+        <CopyrightIcon className="h-[8px] w-[8px] text-textgreen" />
       </div>
     </div>
   );

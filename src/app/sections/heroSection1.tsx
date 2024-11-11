@@ -1,10 +1,10 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { styled } from "@mui/system";
 import { MusicButton } from "../CustomComponents/MusicButton";
 import Image from "next/image";
 import { DaysCounter } from "../CustomComponents/DaysCounter";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Section = styled(motion.section)({
   height: "100vh",
@@ -24,16 +24,8 @@ export interface HerSectionProps {
 }
 
 export const HeroSection = () => {
-  // const containerVariants = {
-  //   hidden: { opacity: 0 },
-  //   visible: {
-  //     opacity: 1,
-  //     transition: {
-  //       delayChildren: 0.2,
-  //       staggerChildren: 0.3,
-  //     },
-  //   },
-  // };
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.4 });
 
   const itemVariants = {
     hidden: { opacity: 0, y: 50 },
@@ -51,7 +43,7 @@ export const HeroSection = () => {
       opacity: 1,
       y: "0%",
       transition: {
-        duration: 1,
+        duration: 3,
         ease: "easeOut",
       },
     },
@@ -71,8 +63,12 @@ export const HeroSection = () => {
       variants={containerVariants}
       className="flex flex-col justify-center items-center md:flex-row   "
     >
-      <motion.div className="w-[90%] h-[90%] flex flex-col justify-center items-center">
-        <motion.div className="w-[400px] md:w-[430px] lg:w-[600px]">
+      <motion.div
+        animate={{ y: 20 }}
+        transition={{ ease: "easeOut", duration: 2 }}
+        className="w-[90%] h-[90%] flex flex-col justify-center items-center"
+      >
+        {/* <motion.div className="w-[400px] md:w-[430px] lg:w-[600px]">
           <Image
             alt="couple"
             src="/images/frametp.png"
@@ -80,8 +76,8 @@ export const HeroSection = () => {
             height={10}
             className="object-cover w-full rounded-md"
           />
-          {/* Imaginary Container (Overlay) */}
-        </motion.div>
+         
+         </motion.div>  */}
         <motion.div className="flex justify-center items-center flex-col">
           <motion.h1 className="font-sail text-px-36 md:text-px-70">
             Goutham & Bhavani
@@ -99,22 +95,16 @@ export const HeroSection = () => {
             <MusicButton />
           </motion.div>
         </motion.div>
-
-        <motion.div className="w-[400px] md:w-[430px] lg:w-[600px]">
-          <Image
-            alt="couple"
-            src="/images/framebt.png"
-            width={400}
-            height={10}
-            className="object-cover w-full rounded-md"
-          />
-          {/* Imaginary Container (Overlay) */}
-        </motion.div>
       </motion.div>
-      <div className="w-[90%] h-[90%]  flex justify-center items-center relative">
+
+      <div className="w-[90%] h-[90%] flex justify-center items-center relative pb-10">
         {/* Image Container */}
-        <div className="bg-white flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]">
-          <div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
+        <motion.div
+          animate={{ y: 20 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+          className="bg-white flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]"
+        >
+          <motion.div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
             <Image
               alt="couple"
               src="/images/G&B1.jpg"
@@ -126,8 +116,8 @@ export const HeroSection = () => {
             <div className="absolute inset-0 border-2 flex flex-col border-dashed border-blue-500 rounded-md">
               <div>Hello</div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
     </Section>
   );

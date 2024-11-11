@@ -41,7 +41,7 @@ export const DaysCounter = ({ targetDate }: DaysCounterProps) => {
   }, [targetDate]);
 
   return (
-    <div className="flex w-[70%] justify-between items-center">
+    <div className="flex w-full md:w-[70%] justify-between items-center">
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-eagleLake text-textgreen">{remainingTime.days}</h1>
         <h1 className="font-jostSemiBold text-textgreen">Days</h1>
