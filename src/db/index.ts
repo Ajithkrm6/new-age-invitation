@@ -7,13 +7,6 @@ const pool = mysql.createPool({
   database: process.env.MYSQL_DB,
 });
 
-// const pool = mysql.createPool({
-//   host: "localhost",
-//   user: "root",
-//   password: "8686668096@Aji",
-//   database: "new_age_invitiation",
-// });
-
 const getConnection = async () => {
   return pool.getConnection();
 };

@@ -1,24 +1,3 @@
-// export interface MapProps {
-//   src: string;
-// }
-// // AIzaSyAxawEthZqI8usjTrGlwNYRCCRTscCrXPM
-// const LocationSection = (props: MapProps) => {
-//   return (
-//     <section>
-//       <h2>Location</h2>
-//       <iframe
-//         src={props.src}
-//         width="600"
-//         height="450"
-
-//         loading="lazy"
-//         style={{ border: 0 }}
-//       ></iframe>
-//     </section>
-//   );
-// };
-
-// components/Map.js
 import React from "react";
 
 const Map = ({ latitude, longitude }: { latitude: any; longitude: any }) => {
