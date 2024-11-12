@@ -6,7 +6,6 @@ import MusicOffIcon from "@mui/icons-material/MusicOff"; // Icon for pausing mus
 export const MusicButton = () => {
   const musicRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false); // State to track if the music is playing
-  const [countdown, setCountdown] = useState(true);
 
   const musicFile = "/music/EePremaUtsavam.mp3";
 
@@ -33,14 +32,6 @@ export const MusicButton = () => {
       setIsPlaying(!isPlaying); // Update the playing state
     }
   };
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setCountdown(false);
-    }, 2000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   return (
     <div>

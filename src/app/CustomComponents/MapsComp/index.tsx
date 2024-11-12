@@ -1,6 +1,12 @@
 import React from "react";
 
-const Map = ({ latitude, longitude }: { latitude: any; longitude: any }) => {
+const Map = ({
+  latitude,
+  longitude,
+}: {
+  latitude: Number;
+  longitude: Number;
+}) => {
   const apiKey = process.env.GMAP_API_KEY;
   const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${latitude},${longitude}`;
   const linkUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;

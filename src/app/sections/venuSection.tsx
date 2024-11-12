@@ -29,13 +29,7 @@ export const VenuSection = () => {
       ></div>
       <div className="w-[90%] h-[90%] bg-white bg-opacity-10 overflow-y-auto backdrop-blur-md grid md:grid-cols-2  rounded-sm absolute">
         <div className=" flex flex-col w-full h-full">
-          <div
-            className=" flex flex-col w-full h-full p-5 rounded-md "
-            // style={{
-            //   backgroundImage: "url('/images/InvitationCard.jpg')",
-            //   backgroundSize: "cover",
-            // }}
-          >
+          <div className=" flex flex-col w-full h-full p-5 rounded-md ">
             <div className=" flex flex-col-2 w-full p-5">
               <div className=" w-full flex justify-center items-center hidden md:block">
                 <Image
