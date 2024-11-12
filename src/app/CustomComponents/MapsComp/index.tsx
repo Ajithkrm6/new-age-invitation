@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Map = ({
   latitude,
@@ -7,9 +7,24 @@ const Map = ({
   latitude: number;
   longitude: number;
 }) => {
-  const apiKey = process.env.NEXT_PUBLIC_GMAP_API_KEY;
-  console.log(apiKey);
-  const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${latitude},${longitude}`;
+  const [mapUrl, setMapUrl] = useState<string>("");
+
+  useEffect(() => {
+    const fetchMapUrl = async () => {
+      try {
+        const response = await fetch(
+          `/api/maps?latitude=${latitude}&longitude=${longitude}`
+        );
+        const data = await response.json();
+        setMapUrl(data.mapUrl);
+      } catch (error) {
+        console.error("Error fetching map URL:", error);
+      }
+    };
+
+    fetchMapUrl();
+  }, [latitude, longitude]);
+
   const linkUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
 
   return (
@@ -20,15 +35,19 @@ const Map = ({
         rel="noopener noreferrer"
         style={{ display: "block", width: "100%", height: "100%" }}
       >
-        <iframe
-          className="h-full "
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          loading="lazy"
-          allowFullScreen
-          src={mapUrl}
-        ></iframe>
+        {mapUrl ? (
+          <iframe
+            className="h-full"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            loading="lazy"
+            allowFullScreen
+            src={mapUrl}
+          ></iframe>
+        ) : (
+          <p>Loading Map...</p>
+        )}
       </a>
     </div>
   );
