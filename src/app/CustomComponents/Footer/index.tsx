@@ -31,7 +31,7 @@ export interface FooterProps {
 
 export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
   return (
-    <div className="bg-opacity-10 bg-black h-full backdrop-blur-md rounded-tr-[20px] rounded-tl-[20px] p-4">
+    <div className="bg-opacity-10 bg-black h-full backdrop-blur-md pt-4 rounded-tr-[20px] rounded-tl-[20px] p-4">
       <div className="grid  md:grid-cols-2">
         {/* photographer credits */}
         <div className="grid grid-cols-[15%,85%] justify-center items-center gap-2">

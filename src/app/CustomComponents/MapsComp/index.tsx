@@ -7,7 +7,8 @@ const Map = ({
   latitude: number;
   longitude: number;
 }) => {
-  const apiKey = process.env.GMAP_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_GMAP_API_KEY;
+  console.log(apiKey);
   const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${latitude},${longitude}`;
   const linkUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
 

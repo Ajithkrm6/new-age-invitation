@@ -7,7 +7,6 @@ import { Footer } from "./CustomComponents/Footer";
 import { VideoSection } from "./sections/videoSection";
 import { VenuSection } from "./sections/venuSection";
 import { OurStorySection } from "./sections/ourStorySection";
-import { ClassNames } from "@emotion/react";
 
 export default function Home() {
   return (
@@ -34,6 +33,7 @@ export default function Home() {
           address: "Visakhapatnam",
           contactnumber: 8686668096,
           email: "Ajithkrm6@gmail.com",
+          aiMusic: "Ai-Generated Bgm",
         }}
       />
     </div>

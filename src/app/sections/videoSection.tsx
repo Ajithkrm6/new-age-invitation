@@ -2,13 +2,18 @@
 import React, { useEffect, useState } from "react";
 import { styled } from "@mui/system";
 import ReactPlayer from "react-player";
+import { motion } from "framer-motion";
 
-const Section = styled("section")({
+const Section = styled(motion.section)({
   height: "100vh",
   width: "100%",
   overflowY: "auto",
+  scrollbarWidth: "none", // For Firefox
+  msOverflowStyle: "none", // For Internet Explorer and Edge
+  "&::-webkit-scrollbar": {
+    display: "none", // For Chrome, Safari, and Edge
+  },
 });
-
 export const VideoSection = () => {
   const [isClient, setIsClient] = useState(false);
 
@@ -19,15 +24,7 @@ export const VideoSection = () => {
 
   return (
     <Section className="flex justify-center items-center">
-      <div
-        className="w-[90%] h-[90%] bg-cover bg-center rounded-md relative"
-        style={{
-          backgroundImage:
-            "url('https://i.pinimg.com/originals/de/22/1f/de221f4ea3f06b7fb71b0ca7f224d2e3.jpg')",
-        }}
-      ></div>
-
-      <div className="w-[90%] h-[90%] bg-white bg-opacity-10 overflow-y-auto backdrop-blur-md flex justify-center  items-center rounded-md absolute">
+      <div className="w-[95%] h-[95%] bg-white bg-opacity-10 overflow-y-auto backdrop-blur-md flex justify-center  items-center rounded-md">
         <div className="w-full h-full flex justify-center items-center rounded-md">
           {isClient && (
             <ReactPlayer
