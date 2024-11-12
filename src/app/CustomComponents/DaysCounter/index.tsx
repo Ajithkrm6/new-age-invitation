@@ -13,8 +13,15 @@ export const DaysCounter = ({ targetDate }: DaysCounterProps) => {
   });
 
   useEffect(() => {
+    // Ensure the target date is in ISO format (YYYY-MM-DD)
     const [month, date, year] = targetDate.split("-");
-    const formatedDate = new Date(`${month}-${date}-${year}`).getTime();
+    const formatedDate = new Date(`${year}-${month}-${date}`).getTime(); // Use YYYY-MM-DD format
+
+    // Check if the formatted date is valid
+    if (isNaN(formatedDate)) {
+      console.error("Invalid date format:", targetDate);
+      return; // Exit if the date is invalid
+    }
 
     const IntervalId = setInterval(() => {
       const currentDate = new Date().getTime();
@@ -42,23 +49,25 @@ export const DaysCounter = ({ targetDate }: DaysCounterProps) => {
   return (
     <div className="flex w-full md:w-[70%] justify-between items-center">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-eagleLake text-textgreen">{remainingTime.days}</h1>
+        <h1 className="font-jostSemiBold text-px-24 text-textgreen">
+          {remainingTime.days}
+        </h1>
         <h1 className="font-jostSemiBold text-textgreen">Days</h1>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-jostSemiBold text-textgreen">
+        <h1 className="font-jostSemiBold text-px-24 text-textgreen">
           {remainingTime.hours}
         </h1>
         <h1 className="font-jostSemiBold text-textgreen">Hours</h1>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-jostSemiBold text-textgreen">
+        <h1 className="font-jostSemiBold text-px-24 text-textgreen">
           {remainingTime.minutes}
         </h1>
         <h1 className="font-jostSemiBold text-textgreen">Minutes</h1>
       </div>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-jostSemiBold text-textgreen">
+        <h1 className="font-jostSemiBold text-px-24 text-textgreen">
           {remainingTime.seconds}
         </h1>
         <h1 className="font-jostSemiBold text-textgreen">Seconds</h1>

@@ -152,9 +152,17 @@ export const MessagesSection = () => {
                           onClose={handleClose}
                           aria-labelledby="modal-modal-title"
                           aria-describedby="modal-modal-description"
+                          slotProps={{
+                            backdrop: {
+                              style: {
+                                backgroundColor: "transparent", // Slightly dark background with 20% opacity
+                                backdropFilter: "blur(6px)",
+                              },
+                            },
+                          }}
                         >
                           <div className="grid gap-3 fixed top-1/2 rounded-sm left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white  h-auto shadow-lg p-4 md:p-6 lg:p-8 xl:p-10 w-11/12 md:w-3/4 lg:w-1/2 xl:w-1/3">
-                            <Typography className="font-jostSemiBold">
+                            <Typography className="font-jostSemiBold text-textgreen">
                               Edit
                             </Typography>
                             <Input
@@ -188,11 +196,11 @@ export const MessagesSection = () => {
         </div>
 
         <div>
-          <div className="flex flex-col items-center h-full  justify-center w-full">
+          <div className="flex flex-col items-center h-full  justify-start w-full">
             <div className="w-full md:w-[70%] flex flex-col gap-2 justify-center items-center p-4">
               <Label htmlFor="visitorname" className="w-full ">
                 <h1 className="font-jostSemiBold text-px-20 text-textgreen">
-                  Your Name
+                  Name
                 </h1>
               </Label>
               <Input
@@ -206,6 +214,7 @@ export const MessagesSection = () => {
             <div className="flex gap-2 justify-center w-full md:w-[70%] p-4 items-center border-white border-solid">
               <Textarea
                 rows={4}
+                placeholder="Your Wishes"
                 className="border-emerald-900 text-textgreen focus:border-none font-jostSemiBold "
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}

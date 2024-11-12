@@ -20,13 +20,6 @@ const Section = styled(motion.section)({
 export const VenuSection = () => {
   return (
     <Section className="flex justify-center items-center">
-      <div
-        className="w-[90%] h-[90%]  bg-center rounded-sm relative"
-        style={{
-          backgroundImage:
-            "url('https://i.pinimg.com/originals/de/22/1f/de221f4ea3f06b7fb71b0ca7f224d2e3.jpg')",
-        }}
-      ></div>
       <div className="w-[90%] h-[90%] bg-white bg-opacity-10 overflow-y-auto backdrop-blur-md grid md:grid-cols-2  rounded-sm absolute">
         <div className=" flex flex-col w-full h-full">
           <div className=" flex flex-col w-full h-full p-5 rounded-md ">

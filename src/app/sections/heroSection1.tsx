@@ -66,7 +66,7 @@ export const HeroSection = () => {
       <motion.div
         animate={{ y: 20 }}
         transition={{ ease: "easeOut", duration: 2 }}
-        className="w-[90%] h-[90%] flex flex-col justify-center items-center"
+        className="w-[90%] h-[90%] flex gap-3 flex-col justify-center items-center"
       >
         {/* <motion.div className="w-[400px] md:w-[430px] lg:w-[600px]">
           <Image
@@ -102,7 +102,7 @@ export const HeroSection = () => {
         <motion.div
           animate={{ y: 20 }}
           transition={{ ease: "easeOut", duration: 2 }}
-          className="bg-white flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]"
+          className="flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]"
         >
           <motion.div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
             <Image
@@ -114,7 +114,7 @@ export const HeroSection = () => {
             />
             {/* Imaginary Container (Overlay) */}
             <div className="absolute inset-0 border-2 flex flex-col border-dashed border-blue-500 rounded-md">
-              <div>Hello</div>
+              {/* <div>Hello</div> */}
             </div>
           </motion.div>
         </motion.div>

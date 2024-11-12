@@ -26,7 +26,7 @@ export const OurStorySection = () => {
       </div>
       <div className="grid md:grid-cols-2 w-full h-[85%]">
         <div className="bg-[url('/images/TestBg3.png')] flex justify-center items-center">
-          <div className="bg-white flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]">
+          <div className="flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]">
             <div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
               <Image
                 alt="couple"
