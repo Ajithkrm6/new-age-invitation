@@ -4,8 +4,8 @@ const Map = ({
   latitude,
   longitude,
 }: {
-  latitude: Number;
-  longitude: Number;
+  latitude: number;
+  longitude: number;
 }) => {
   const apiKey = process.env.GMAP_API_KEY;
   const mapUrl = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${latitude},${longitude}`;

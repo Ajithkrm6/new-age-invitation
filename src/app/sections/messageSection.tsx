@@ -1,22 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { styled } from "@mui/system";
-import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerTrigger,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerClose,
-  DrawerTitle,
-} from "@/components/ui/drawer";
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import { Modal, Typography, Box } from "@mui/material";

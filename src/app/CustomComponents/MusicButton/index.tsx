@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import MusicNoteIcon from "@mui/icons-material/MusicNote"; // Icon for playing music
 import MusicOffIcon from "@mui/icons-material/MusicOff"; // Icon for pausing music

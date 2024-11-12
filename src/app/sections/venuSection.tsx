@@ -96,21 +96,3 @@ export const VenuSection = () => {
     </Section>
   );
 };
-
-{
-  /* <img
-            src="/images/sangeethImg.jpg"
-            alt="couple pic"
-            className="h-[300px] w-[150px]"
-          /> */
-}
-{
-  /* <Image
-            alt="couple"
-            src="/images/SaveTheDate2.jpg" // Corrected the path from 'imgaes' to 'images'
-            width={400} // Set to a reasonable width
-            height={100} // Set to a reasonable height
-            // This will keep the aspect ratio intact
-            className="object-cover w-[500px] rounded-md" // Ensures the image covers the container without distortion
-          /> */
-}

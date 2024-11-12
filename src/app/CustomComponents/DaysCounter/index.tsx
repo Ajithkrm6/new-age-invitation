@@ -22,7 +22,6 @@ export const DaysCounter = ({ targetDate }: DaysCounterProps) => {
 
       if (difference <= 0) {
         clearInterval(IntervalId);
-        let days, hours, minutes, seconds;
         setRemainingTime({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       } else {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));

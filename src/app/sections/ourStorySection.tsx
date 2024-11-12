@@ -43,15 +43,16 @@ export const OurStorySection = () => {
         <div className="flex flex-col justify-center items-center">
           <p className="text-textgreen text-px-20 font-pacifico break-words hyphens-auto">
             In 2017, what started as a bond of brother and sister evolved into a
-            beautiful and enduring love 💖. Over the years, we’ve walked through
-            life together—filled with laughter, occasional arguments, and the
-            challenging journey of winning our families' hearts. Though our path
-            wasn’t always smooth, each challenge only made our love stronger.
-            From leaving behind comfort zones to embracing new experiences,
-            we’ve stood by each other with unwavering belief in our
-            journey.Through every test, one thing remained constant: our belief
-            in one another. We fought, we loved, we grew, and now, we’re ready
-            to embrace forever, cherishing every step that brought us here 💕.
+            beautiful and enduring love 💖. Over the years, we&apos;ve walked
+            through life together—filled with laughter, occasional arguments,
+            and the challenging journey of winning our families hearts. Though
+            our path wasn&apos;t always smooth, each challenge only made our
+            love stronger. From leaving behind comfort zones to embracing new
+            experiences, we&apos;ve stood by each other with unwavering belief
+            in our journey.Through every test, one thing remained constant: our
+            belief in one another. We fought, we loved, we grew, and now,
+            we&apos;re ready to embrace forever, cherishing every step that
+            brought us here 💕.
           </p>
           <div className="pt-4">
             <h1 className="text-textgreen text-px-20 font-pacifico">
