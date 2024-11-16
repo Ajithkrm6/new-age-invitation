@@ -32,10 +32,9 @@ export const OurStorySection = () => {
         <div className="bg-[url('/images/TestBg3.png')] flex justify-center items-center">
           <motion.div
             ref={ref} // Add the reference for intersection observer
-            initial={{ opacity: 0, y: 100 }} // Initial state: hidden and 100px down
+            initial={{ opacity: 0 }} // Initial state: hidden and 100px down
             animate={{
-              opacity: inView ? 1 : 0,
-              y: inView ? 0 : 100, // Slide up when in view
+              opacity: inView ? 1 : 0, // Fade in when in view
             }}
             transition={{
               duration: 1, // Animation duration
