@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
 import { styled } from "@mui/system";
-import { MusicButton } from "../CustomComponents/MusicButton";
 import Image from "next/image";
-import { DaysCounter } from "../CustomComponents/DaysCounter";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Section = styled(motion.section)({
   height: "100vh",
@@ -18,6 +17,11 @@ const Section = styled(motion.section)({
 });
 
 export const OurStorySection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Only trigger the animation once
+    threshold: 0.5, // Trigger when 50% of the section is in view
+  });
+
   return (
     <Section className="flex flex-col p-5">
       <div className=" w-full h-[15%] flex flex-col justify-center items-center">
@@ -26,7 +30,19 @@ export const OurStorySection = () => {
       </div>
       <div className="grid md:grid-cols-2 w-full h-[85%]">
         <div className="bg-[url('/images/TestBg3.png')] flex justify-center items-center">
-          <div className="flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]">
+          <motion.div
+            ref={ref} // Add the reference for intersection observer
+            initial={{ opacity: 0, y: 100 }} // Initial state: hidden and 100px down
+            animate={{
+              opacity: inView ? 1 : 0,
+              y: inView ? 0 : 100, // Slide up when in view
+            }}
+            transition={{
+              duration: 1, // Animation duration
+              ease: "easeOut", // Smooth easing
+            }}
+            className="flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]"
+          >
             <div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
               <Image
                 alt="couple"
@@ -38,7 +54,7 @@ export const OurStorySection = () => {
               {/* Imaginary Container (Overlay) */}
               <div className="absolute inset-0 border-2 flex flex-col border-dashed border-blue-500 rounded-md"></div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col justify-center items-center">
           <p className="text-textgreen text-px-20 font-pacifico break-words hyphens-auto">
