@@ -7,12 +7,20 @@ import { Footer } from "./CustomComponents/Footer";
 import { VideoSection } from "./sections/videoSection";
 import { VenuSection } from "./sections/venuSection";
 import { OurStorySection } from "./sections/ourStorySection";
+import mainBg from "../../public/images/mainBg3.png";
 
 export default function Home() {
   return (
     // <div className="bg-[#F6FCDF]">
     // {/* // <div className="bg-[linear-gradient(90deg,_#800000,_#173B45)]"> */}
-    <div className="bg-[url('/images/mainBg3.png')] w-full h-full">
+    <div
+      className="w-full h-full"
+      style={{
+        backgroundImage: `url(${mainBg.src})`,
+        backgroundSize: "cover", // Optional for covering the entire div
+        // backgroundPosition: "center", // Optional for centering the image
+      }}
+    >
       <HeroSection />
       <OurStorySection />
       <MessagesSection />

@@ -77,7 +77,7 @@ export const VenuCard = (props: VenuCardProps) => {
           <div className="w-full p-2 flex justify-end">
             <CancelIcon onClick={() => handleClose()} />
           </div>
-          <Map latitude={17.714294} longitude={83.323685} />
+          <Map latitude={17.762940426276053} longitude={83.32101119554729} />
         </div>
       </Modal>
     </Card>

@@ -2,8 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
-export default function Carousel() {
+export interface CarouselProps {
+  slideData: string[];
+}
+
+export default function Carousel({ slideData }: CarouselProps) {
   const settings = {
     dots: true,
     infinite: true,
@@ -46,31 +51,49 @@ export default function Carousel() {
   return (
     <div className="container gap-3 w-full">
       <Slider {...settings}>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
-        <div className="p-2">
-          <img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
-        </div>
+        {slideData.map((img, ind) => {
+          return (
+            <div className="p-2" key={ind + 1}>
+              {/* <img src={img} alt={img} className="w-100 h-100" /> */}
+              <Image
+                src={img}
+                alt={`Slide ${ind + 1}`}
+                width={500} // Adjust width based on your requirements
+                height={300} // Adjust height based on your requirements
+                layout="intrinsic" // Optional, adjusts the image size proportionally
+                priority
+              />
+            </div>
+          );
+        })}
       </Slider>
     </div>
   );
+}
+
+{
+  /* <div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div>
+<div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div>
+<div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div>
+<div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div>
+<div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div>
+<div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div>
+<div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div>
+<div className="p-2">
+<img src="/images/G&B1.jpg" alt="something" className="w-100 h-100" />
+</div> */
 }

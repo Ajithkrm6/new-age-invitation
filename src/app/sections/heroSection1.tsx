@@ -5,6 +5,7 @@ import { MusicButton } from "../CustomComponents/MusicButton";
 import Image from "next/image";
 import { DaysCounter } from "../CustomComponents/DaysCounter";
 import { motion, useInView } from "framer-motion";
+import heroCloseup from "../../../public/images/heroCloseup.png";
 
 const Section = styled(motion.section)({
   height: "100vh",
@@ -107,14 +108,17 @@ export const HeroSection = () => {
           <motion.div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
             <Image
               alt="couple"
-              src="/images/G&B1.jpg"
+              src={heroCloseup}
               width={400}
               height={100}
               className="object-cover w-full rounded-md"
+              priority // Use priority for above-the-fold images
+              quality={75} // Adjust quality if needed
             />
             {/* Imaginary Container (Overlay) */}
-            <div className="absolute inset-0 border-2 flex flex-col border-dashed border-blue-500 rounded-md">
-              {/* <div>Hello</div> */}
+            <div className="absolute inset-0 flex flex-col justify-between rounded-md">
+              <div>hello</div>
+              <div className="w-full bg-white flex justify-end">world</div>
             </div>
           </motion.div>
         </motion.div>

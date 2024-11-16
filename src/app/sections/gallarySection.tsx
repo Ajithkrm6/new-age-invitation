@@ -15,18 +15,15 @@ const Section = styled(motion.section)({
   },
 });
 
-const pSlides = [
-  "/images/G&B2.jpg",
-  "/images/G&B1.jpg",
-  "/images/G&B2.jpg",
-  "/images/G&B1.jpg",
-];
-
-const lSlides = [
-  "/images/G&B2.jpg",
-  "/images/G&B2.jpg",
-  "/images/G&B2.jpg",
-  "/images/G&B2.jpg",
+const slides = [
+  "/images/Gu&B1.jpg",
+  "/images/Gu&B2.jpg",
+  "/images/G&B3.jpg",
+  "/images/G&B4.jpg",
+  "/images/G&B5.jpg",
+  "/images/G&B6.jpg",
+  "/images/G&B7.jpg",
+  "/images/G&B8.jpg",
 ];
 
 export const GallarySection = () => {
@@ -39,7 +36,7 @@ export const GallarySection = () => {
       </div>
       <div className="w-[95%] h-[95%] bg-textgreen bg-opacity-10 flex flex-col justify-center items-center overflow-y-auto backdrop-blur-md rounded-sm">
         <div className="w-[95%] h-[95%] rounded-md flex flex-col justify-center items-center">
-          <Carousel />
+          <Carousel slideData={slides} />
         </div>
       </div>
     </Section>
