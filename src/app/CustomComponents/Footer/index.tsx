@@ -25,6 +25,7 @@ export interface FooterProps {
     address?: string;
     website?: string;
     instagram?: string;
+    linkedIn?: string;
     aiMusic?: string;
   };
 }
@@ -43,24 +44,24 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
           </div>
 
           <div className="pt-1">
-            <h1 className="text-textgreen">
+            <h1 className="text-black">
               {photogphrDetails?.photoghprFirmName}
             </h1>
-            <p className="text-textgreen">{photogphrDetails?.description}</p>
-            <p className="text-textgreen">
+            <p className="text-black">{photogphrDetails?.description}</p>
+            <p className="text-black">
               <span>Address: </span>
               {photogphrDetails?.address}
             </p>
-            <p className="text-textgreen">
+            <p className="text-black">
               <span>Mobile: </span>
               {photogphrDetails?.contactnumber}
             </p>
-            <p className="break-all whitespace-normal text-textgreen">
+            <p className="break-all whitespace-normal text-text-black">
               <span>Email: </span>
               {photogphrDetails?.email}
             </p>
             <div className="flex justify-start items-start gap-3 flex-wrap pt-2">
-              <Link href="https://www.instagram.com/tdm_photography2023?igsh=MXI5NmxnbWRvaGd6bg== ">
+              <Link href={photogphrDetails?.instagram ?? "#"}>
                 <Image
                   src="/images/insta.png"
                   alt="insta icon"
@@ -70,7 +71,7 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
                 />
               </Link>
 
-              <Link href="https://www.instagram.com/tdm_photography2023?igsh=MXI5NmxnbWRvaGd6bg== ">
+              <Link href={photogphrDetails?.facebook ?? "#"}>
                 <Image
                   src="/images/fb.png"
                   alt="insta icon"
@@ -93,26 +94,26 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
           </div>
 
           <div className="pt-1">
-            <h1 className="text-textgreen">{devDetails?.companyName}</h1>
-            <p className="text-textgreen">{devDetails?.description}</p>
-            <p className="text-textgreen">
+            <h1 className="text-black">{devDetails?.companyName}</h1>
+            <p className="text-text-black">{devDetails?.description}</p>
+            <p className="text-text-black">
               <span>Address: </span>
               {devDetails?.address}
             </p>
-            <p className="text-textgreen">
+            <p className="text-text-black">
               <span>Mobile: </span>
               {devDetails?.contactnumber}
             </p>
-            <p className="break-all whitespace-normal text-textgreen">
+            <p className="break-all whitespace-normal text-text-black">
               <span>Email: </span>
               {devDetails?.email}
             </p>
-            <p className="break-all whitespace-normal text-textgreen">
+            <p className="break-all whitespace-normal text-text-black">
               <span>Music: </span>
               {devDetails?.aiMusic}
             </p>
             <div className="flex justify-start items-start gap-3 flex-wrap pt-2">
-              <Link href="https://www.instagram.com/tdm_photography2023?igsh=MXI5NmxnbWRvaGd6bg== ">
+              <Link href={devDetails?.instagram ?? "#"}>
                 <Image
                   src="/images/insta.png"
                   alt="insta icon"
@@ -122,9 +123,9 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
                 />
               </Link>
 
-              <Link href="https://www.instagram.com/tdm_photography2023?igsh=MXI5NmxnbWRvaGd6bg== ">
+              <Link href={devDetails?.linkedIn ?? "#"}>
                 <Image
-                  src="/images/fb.png"
+                  src="/images/linkedIN.png"
                   alt="insta icon"
                   width={15}
                   height={15}
@@ -138,8 +139,8 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
         {/* rights reserved */}
       </div>
       <div className="flex justify-center items-center w-full">
-        <p className="text-textgreen">All Rights Reserved</p>
-        <CopyrightIcon className="h-[8px] w-[8px] text-textgreen" />
+        <p className="text-black">All Rights Reserved</p>
+        <CopyrightIcon className="h-[8px] w-[8px] text-black" />
       </div>
     </div>
   );

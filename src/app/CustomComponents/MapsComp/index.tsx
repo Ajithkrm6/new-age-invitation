@@ -46,7 +46,9 @@ const Map = ({
             src={mapUrl}
           ></iframe>
         ) : (
-          <p>Loading Map...</p>
+          <div className="w-full h-full flex justify-center items-center">
+            <p className="">Loading Map...</p>
+          </div>
         )}
       </a>
     </div>

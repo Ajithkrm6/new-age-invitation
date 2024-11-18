@@ -23,6 +23,8 @@ const config: Config = {
         sacramento: ["var(--font-sacramento)"],
         sail: ["var(--font-sail)"],
         jostSemiBold: ["var(--font-jost-semibold)"],
+        karla: ["var(--font-karla)"],
+        ephesis: ["var(--font-ephesis)"],
       },
       fontSize: {
         "px-2": "0.125rem",

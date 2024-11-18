@@ -34,16 +34,25 @@ export default function Home() {
           address: "Visakhapatnam",
           contactnumber: 9618630716,
           email: "TheDreamMemoryPhotography@gmail.com",
+          instagram:
+            "https://www.instagram.com/tdm_photography2023?igsh=MXI5NmxnbWRvaGd6bg==",
         }}
         devDetails={{
-          companyName: "Quadverse Technologies",
+          companyName: "Hexify Software",
           description: "Software Company",
           address: "Visakhapatnam",
+          instagram:
+            "https://www.instagram.com/ajithkrm6?igsh=MTBzanA1dzJoNjR0aw%3D%3D&utm_source=qr",
+          linkedIn: "https://www.linkedin.com/in/ajith-kumar-tech22/",
           contactnumber: 8686668096,
-          email: "Ajithkrm6@gmail.com",
+          email: "Ajithkumar.tech22@gmail.com",
           aiMusic: "Ai-Generated Bgm",
         }}
       />
     </div>
   );
 }
+
+//
+//
+//

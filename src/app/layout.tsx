@@ -11,6 +11,8 @@ import {
   Comfortaa,
   Sail,
   Jost,
+  Karla,
+  Ephesis,
 } from "next/font/google";
 
 const geistSans = localFont({
@@ -24,10 +26,22 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+const ephesis = Ephesis({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ephesis",
+});
+
 const jostSemibold = Jost({
   subsets: ["latin"],
   weight: "600",
   variable: "--font-jost-semibold",
+});
+
+const karla = Karla({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  variable: "--font-karla",
 });
 
 const sail = Sail({
@@ -114,7 +128,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${sail.variable} ${jostSemibold.variable} ${comfortaaBold.variable} ${comfortaaLight.variable} ${comfortaaMedium.variable} ${comfortaaRegular.variable} ${comfortaaSemiBold.variable} ${comfortaaLight.variable} ${reenieBeanie.variable} ${geistMono.variable} ${eagleLake.variable} ${kaushanScript.variable} ${gruppo.variable} ${pacifico.variable} ${sacramento.variable} antialiased`}
+        className={`${karla.variable} ${ephesis.variable}  ${geistSans.variable} ${sail.variable} ${jostSemibold.variable} ${comfortaaBold.variable} ${comfortaaLight.variable} ${comfortaaMedium.variable} ${comfortaaRegular.variable} ${comfortaaSemiBold.variable} ${comfortaaLight.variable} ${reenieBeanie.variable} ${geistMono.variable} ${eagleLake.variable} ${kaushanScript.variable} ${gruppo.variable} ${pacifico.variable} ${sacramento.variable} antialiased`}
       >
         {children}
       </body>

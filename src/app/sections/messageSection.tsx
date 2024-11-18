@@ -112,7 +112,7 @@ export const MessagesSection = () => {
     <Section className="flex flex-col p-5 ">
       <div className=" w-full h-[15%] flex flex-col justify-center items-center">
         <h1 className="font-sail text-px-28 text-textgreen">
-          Send your Wishes
+          Share Your Wishes And Memories With Us
         </h1>
       </div>
       <div className="grid md:grid-cols-2 w-full h-[85%]">

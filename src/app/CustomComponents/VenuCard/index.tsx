@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import {
@@ -16,11 +16,14 @@ import Map from "../MapsComp";
 import CancelIcon from "@mui/icons-material/Cancel";
 
 export interface VenuCardProps {
-  img: string;
+  img: StaticImageData;
   event?: string;
   description?: string;
   date?: string;
   time?: string;
+  latitude: number;
+  longitude: number;
+  venue?: string;
 }
 
 export const VenuCard = (props: VenuCardProps) => {
@@ -35,7 +38,7 @@ export const VenuCard = (props: VenuCardProps) => {
   };
   return (
     <Card className="w-auto min-w-[] bg-opacity-10 bg-black h-full backdrop-blur-md rounded-sm flex flex-col justify-center items-center gap-3 p-3">
-      <div className="w-[250px] h-[250px] bg-black flex justify-center items-center rounded-[250px]">
+      <div className="w-[250px] h-[250px] bg-white flex justify-center items-center rounded-[250px]">
         <Image
           src={props.img}
           alt="save teh date image"
@@ -45,18 +48,21 @@ export const VenuCard = (props: VenuCardProps) => {
         />
       </div>
       <CardHeader className="bg-textgreen w-full flex justify-center items-center">
-        <CardTitle>{props.event}</CardTitle>
+        <CardTitle className="text-white">{props.event}</CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col justify-center items-center">
-        <p>{props.description}</p>
-        <h1>Date: {props.date}</h1>
-        <h1>Time: {props.time}</h1>
-        <Button
-          className="bg-textgreen hover:bg-textgreen"
-          onClick={() => handleOpen()}
-        >
-          Show Maps
-        </Button>
+      <CardContent className="flex flex-col gap-2">
+        <p style={{ fontWeight: "bold" }}>{props.description}</p>
+        <h1 style={{ fontWeight: "bold" }}>Date: {props.date}</h1>
+        <h1 style={{ fontWeight: "bold" }}>Time: {props.time}</h1>
+        <h1 style={{ fontWeight: "bold" }}>Venu: {props.venue}</h1>
+        <div className="w-full flex justify-center items-center">
+          <Button
+            className="bg-textgreen hover:bg-textgreen"
+            onClick={() => handleOpen()}
+          >
+            Show Maps
+          </Button>
+        </div>
       </CardContent>
       <Modal
         open={open}
@@ -77,9 +83,12 @@ export const VenuCard = (props: VenuCardProps) => {
           <div className="w-full p-2 flex justify-end">
             <CancelIcon onClick={() => handleClose()} />
           </div>
-          <Map latitude={17.762940426276053} longitude={83.32101119554729} />
+          <Map latitude={props.latitude} longitude={props.longitude} />
         </div>
       </Modal>
     </Card>
   );
 };
+
+// 17.771424942512965, 83.31961583731614 haldi
+// 17.762940426276053, 83.32101119554729 mandapam
