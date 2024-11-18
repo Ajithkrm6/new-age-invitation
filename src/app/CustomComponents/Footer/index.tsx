@@ -3,6 +3,9 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import Image from "next/image";
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import fb from "../../../../public/images/fb.svg";
+import insta from "../../../../public/images/insta.svg";
+import linkdin from "../../../../public/images/linkdin.svg";
 
 export interface FooterProps {
   photogphrDetails?: {

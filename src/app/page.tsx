@@ -39,7 +39,7 @@ export default function Home() {
         }}
         devDetails={{
           companyName: "Hexify Software",
-          description: "Software Company",
+          // description: "Software Company",
           address: "Visakhapatnam",
           instagram:
             "https://www.instagram.com/ajithkrm6?igsh=MTBzanA1dzJoNjR0aw%3D%3D&utm_source=qr",

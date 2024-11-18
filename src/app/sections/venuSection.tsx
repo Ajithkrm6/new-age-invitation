@@ -52,9 +52,9 @@ export const VenuSection = () => {
       img: reception,
       event: "Reception",
       description:
-        "Join us as we celebrate love, laughter, and a splash of vibrant colors at our Haldi Ceremony! Let's make it a joyful start to our wedding festivities.",
-      date: "8th December 2024",
-      time: "From 4pm Onwards",
+        "We are excited to celebrate our love with you! Please join us for our wedding reception as we begin this new chapter together. Your presence will make our day even more special.",
+      date: "10th December 2024",
+      time: "From 7pm Onwards",
       venue:
         "Sri Radha Krishna Kalyanamandapam, Q87C+4C6, Thota Garuvu, Arilova, Visakhapatnam ",
       latitude: 17.762812521841266,
