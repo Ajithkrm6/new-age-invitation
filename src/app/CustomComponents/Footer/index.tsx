@@ -127,9 +127,9 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
                 <Image
                   src="/images/linkedIN.png"
                   alt="insta icon"
-                  width={15}
-                  height={15}
-                  className="w-[40px]"
+                  width={13}
+                  height={13}
+                  className="w-[35px]"
                 />
               </Link>
             </div>
