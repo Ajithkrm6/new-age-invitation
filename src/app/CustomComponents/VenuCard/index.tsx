@@ -48,7 +48,7 @@ export const VenuCard = (props: VenuCardProps) => {
         />
       </div>
       <CardHeader className="bg-textPink w-full flex justify-center items-center">
-        <CardTitle className="text-white">{props.event}</CardTitle>
+        <CardTitle className="text-textLightPink">{props.event}</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-2 justify-center items-center">
         <p className="font-sail text-px-18">{props.description}</p>
@@ -72,7 +72,7 @@ export const VenuCard = (props: VenuCardProps) => {
         </h1>
         <div className="w-full flex justify-center items-center">
           <Button
-            className="bg-textPink hover:bg-textgreen"
+            className="bg-textPink text-textLightPink hover:bg-textgreen"
             onClick={() => handleOpen()}
           >
             Show Maps

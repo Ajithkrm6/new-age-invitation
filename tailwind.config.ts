@@ -85,6 +85,7 @@ const config: Config = {
         textLightGreen: "#ABBA7C",
         textPink: "#CA7373",
         textDarkPink: "#D76C82",
+        textLightPink: "#FFE3E3",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         lightBrownBg: "rgb(59 21 2)",
