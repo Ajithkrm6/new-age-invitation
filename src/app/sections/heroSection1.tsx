@@ -50,7 +50,7 @@ export const HeroSection = () => {
         className="w-[90%] h-[90%] flex gap-3 flex-col justify-center items-center"
       >
         <motion.div className="flex justify-center items-center flex-col">
-          <motion.h1 className="font-sarina text-px-24 text-textgreen md:text-px-50">
+          <motion.h1 className="font-sarina text-px-22 text-textgreen md:text-px-24 lg:text-px-30 xl:text-px-50">
             Goutham & Bhavani
           </motion.h1>
           <motion.h1
@@ -86,7 +86,7 @@ export const HeroSection = () => {
           }}
           className="flex justify-center items-center h-auto p-2 w-[270px] md:w-[450px] lg:w-[415px]"
         >
-          <motion.div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
+          <motion.div className="relative w-[250px] md:w-[400px] lg:w-[403px]">
             <Image
               alt="couple"
               src={heroCloseup}

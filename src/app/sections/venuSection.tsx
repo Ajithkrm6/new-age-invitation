@@ -30,7 +30,7 @@ export const VenuSection = () => {
         "Join us as we celebrate love, laughter, and a splash of vibrant colors at our Haldi Ceremony! Let's make it a joyful start to our wedding festivities.",
       date: "8th December 2024",
       time: "From 4:00PM Onwards",
-      venue: "At my Home",
+      venue: "At my Home, kailish nagar, Arilova, Visakhapatnam.",
       latitude: 17.771424942512965,
       longitude: 83.31961583731614,
     },
@@ -43,7 +43,7 @@ export const VenuSection = () => {
       date: "10th December 2024",
       time: "From 10:00PM Onwards",
       venue:
-        "Sri Radha Krishna Kalyanamandapam, Q87C+4C6, Thota Garuvu, Arilova, Visakhapatnam",
+        "Sri Radha Krishna Kalyanamandapam, Thota Garuvu, Arilova, Visakhapatnam.",
       latitude: 17.762812521841266,
       longitude: 83.32100694675292,
     },
@@ -52,11 +52,11 @@ export const VenuSection = () => {
       img: reception,
       event: "Reception",
       description:
-        "We are excited to celebrate our love with you! Please join us for our wedding reception as we begin this new chapter together. Your presence will make our day even more special.",
+        "We're thrilled to celebrate our love with you! Join us for our wedding reception as we start this new chapter. Your presence will make it unforgettable!",
       date: "10th December 2024",
       time: "From 7:00PM Onwards",
       venue:
-        "Sri Radha Krishna Kalyanamandapam, Q87C+4C6, Thota Garuvu, Arilova, Visakhapatnam ",
+        "Sri Radha Krishna Kalyanamandapam, Thota Garuvu, Arilova, Visakhapatnam.",
       latitude: 17.762812521841266,
       longitude: 83.32100694675292,
     },
@@ -69,7 +69,7 @@ export const VenuSection = () => {
       date: "10th December 2024",
       time: "From 7:00PM Onwards",
       venue:
-        "Sri Radha Krishna Kalyanamandapam, Q87C+4C6, Thota Garuvu, Arilova, Visakhapatnam ",
+        "Sri Radha Krishna Kalyanamandapam, Thota Garuvu, Arilova, Visakhapatnam.",
       latitude: 17.762812521841266,
       longitude: 83.32100694675292,
     },
@@ -78,11 +78,11 @@ export const VenuSection = () => {
       img: muhurtham,
       event: "Muhurtham",
       description:
-        "With immense joy and love, we invite you to our wedding muhurtham. Please join us on this special day to bless our union and celebrate this beautiful moment together.",
+        "With immense joy and love, we invite you to our wedding muhurtham.Please join us to bless our union and celebrate this special moment!",
       date: "Early Hours of 11th December 2024",
       time: "4:14AM",
       venue:
-        "Sri Radha Krishna Kalyanamandapam, Q87C+4C6, Thota Garuvu, Arilova, Visakhapatnam ",
+        "Sri Radha Krishna Kalyanamandapam, Thota Garuvu, Arilova, Visakhapatnam.",
       latitude: 17.762812521841266,
       longitude: 83.32100694675292,
     },
