@@ -22,7 +22,6 @@ const slides = [
   "/images/G&B4.jpg",
   "/images/G&B5.jpg",
   "/images/G&B6.jpg",
-  "/images/G&B7.jpg",
   "/images/G&B8.jpg",
   "/images/G&B9.jpg",
   "/images/G&B10.jpg",

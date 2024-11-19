@@ -12,14 +12,11 @@ import hexify from "../../public/images/hexifylogo.png";
 
 export default function Home() {
   return (
-    // <div className="bg-[#F6FCDF]">
-    // {/* // <div className="bg-[linear-gradient(90deg,_#800000,_#173B45)]"> */}
     <div
       className="w-full h-full"
       style={{
         backgroundImage: `url(${mainBg.src})`,
-        backgroundSize: "cover", // Optional for covering the entire div
-        // backgroundPosition: "center", // Optional for centering the image
+        backgroundSize: "cover",
       }}
     >
       <HeroSection />
@@ -53,7 +50,3 @@ export default function Home() {
     </div>
   );
 }
-
-//
-//
-//
