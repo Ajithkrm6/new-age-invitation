@@ -127,13 +127,13 @@ export const MessagesSection = () => {
                         <AvatarFallback>{item.name?.charAt(0)}</AvatarFallback>
                       </Avatar>
 
-                      <h1 className="text-textgreen font-jostSemiBold">
+                      <h1 className="text-black font-jostSemiBold">
                         {item.name}
                       </h1>
                     </div>
                     <div className=" pl-12">
                       <div>
-                        <h1 className="text-textgreen font-jostSemiBold">
+                        <h1 className="text-black font-jostSemiBold">
                           {item.message}
                         </h1>
                       </div>

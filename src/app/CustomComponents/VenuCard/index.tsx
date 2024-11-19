@@ -53,13 +53,16 @@ export const VenuCard = (props: VenuCardProps) => {
       <CardContent className="flex flex-col gap-2 justify-center items-center">
         <p className="font-sail text-px-18">{props.description}</p>
         <h1 className=" font-sail text-px-18">
-          Date:{" "}
-          <span className=" text-px-16" style={{ fontWeight: "bold" }}>
+          Date:
+          <span
+            className="font-kaushanScript text-px-16"
+            style={{ fontWeight: "bold" }}
+          >
             {props.date}
           </span>
         </h1>
         <h1 className=" font-sail text-px-18">
-          Time:{" "}
+          Time:
           <span
             className="font-kaushanScript text-px-16"
             style={{ fontWeight: "bold" }}
@@ -68,7 +71,7 @@ export const VenuCard = (props: VenuCardProps) => {
           </span>
         </h1>
         <h1 className=" break-words hyphens-auto break-all whitespace-normal text-px-18 font-sail">
-          Venu: <span className="font-kaushanScript">{props.venue}</span>
+          Venu: {props.venue}
         </h1>
         <div className="w-full flex justify-center items-center">
           <Button

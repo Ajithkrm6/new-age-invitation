@@ -50,7 +50,7 @@ export const HeroSection = () => {
         className="w-[90%] h-[90%] flex gap-3 flex-col justify-center items-center"
       >
         <motion.div className="flex justify-center items-center flex-col">
-          <motion.h1 className="font-sarina text-px-26 text-textgreen md:text-px-50">
+          <motion.h1 className="font-sarina text-px-24 text-textgreen md:text-px-50">
             Goutham & Bhavani
           </motion.h1>
           <motion.h1
