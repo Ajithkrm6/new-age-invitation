@@ -8,6 +8,7 @@ import { VideoSection } from "./sections/videoSection";
 import { VenuSection } from "./sections/venuSection";
 import { OurStorySection } from "./sections/ourStorySection";
 import mainBg from "../../public/images/mainBg3.png";
+import hexify from "../../public/images/hexifylogo.png";
 
 export default function Home() {
   return (
@@ -38,8 +39,8 @@ export default function Home() {
             "https://www.instagram.com/tdm_photography2023?igsh=MXI5NmxnbWRvaGd6bg==",
         }}
         devDetails={{
+          avtar: hexify,
           companyName: "Hexify Software",
-          // description: "Software Company",
           address: "Visakhapatnam",
           instagram:
             "https://www.instagram.com/ajithkrm6?igsh=MTBzanA1dzJoNjR0aw%3D%3D&utm_source=qr",

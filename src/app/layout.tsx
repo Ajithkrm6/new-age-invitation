@@ -13,6 +13,7 @@ import {
   Jost,
   Karla,
   Ephesis,
+  Sarina,
 } from "next/font/google";
 
 const geistSans = localFont({
@@ -24,6 +25,12 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const sarina = Sarina({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-sarina",
 });
 
 const ephesis = Ephesis({
@@ -128,7 +135,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${karla.variable} ${ephesis.variable}  ${geistSans.variable} ${sail.variable} ${jostSemibold.variable} ${comfortaaBold.variable} ${comfortaaLight.variable} ${comfortaaMedium.variable} ${comfortaaRegular.variable} ${comfortaaSemiBold.variable} ${comfortaaLight.variable} ${reenieBeanie.variable} ${geistMono.variable} ${eagleLake.variable} ${kaushanScript.variable} ${gruppo.variable} ${pacifico.variable} ${sacramento.variable} antialiased`}
+        className={`${karla.variable} ${sarina.variable} ${ephesis.variable}  ${geistSans.variable} ${sail.variable} ${jostSemibold.variable} ${comfortaaBold.variable} ${comfortaaLight.variable} ${comfortaaMedium.variable} ${comfortaaRegular.variable} ${comfortaaSemiBold.variable} ${comfortaaLight.variable} ${reenieBeanie.variable} ${geistMono.variable} ${eagleLake.variable} ${kaushanScript.variable} ${gruppo.variable} ${pacifico.variable} ${sacramento.variable} antialiased`}
       >
         {children}
       </body>

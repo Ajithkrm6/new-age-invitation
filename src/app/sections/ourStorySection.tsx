@@ -26,7 +26,7 @@ export const OurStorySection = () => {
     <Section className="flex flex-col p-5">
       <div className=" w-full h-[15%] flex flex-col justify-center items-center">
         <h1 className="text-textgreen font-jostSemiBold">
-          Out Journey Of Love
+          Our Journey Of Love
         </h1>
         <h1 className="font-sail text-px-28 text-textgreen">How it started</h1>
       </div>
@@ -53,7 +53,7 @@ export const OurStorySection = () => {
                 className="object-cover w-full rounded-md"
               />
               {/* Imaginary Container (Overlay) */}
-              <div className="absolute inset-0 border-2 flex flex-col border-dashed border-blue-500 rounded-md"></div>
+              <div className="absolute inset-0 flex flex-col rounded-md"></div>
             </div>
           </motion.div>
         </div>

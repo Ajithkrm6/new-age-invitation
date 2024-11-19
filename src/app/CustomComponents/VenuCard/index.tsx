@@ -47,17 +47,32 @@ export const VenuCard = (props: VenuCardProps) => {
           className="object-fit w-[200px] h-[200px] rounded-[200px] bg-white"
         />
       </div>
-      <CardHeader className="bg-textgreen w-full flex justify-center items-center">
+      <CardHeader className="bg-textPink w-full flex justify-center items-center">
         <CardTitle className="text-white">{props.event}</CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-2">
-        <p style={{ fontWeight: "bold" }}>{props.description}</p>
-        <h1 style={{ fontWeight: "bold" }}>Date: {props.date}</h1>
-        <h1 style={{ fontWeight: "bold" }}>Time: {props.time}</h1>
-        <h1 style={{ fontWeight: "bold" }}>Venu: {props.venue}</h1>
+      <CardContent className="flex flex-col gap-2 justify-center items-center">
+        <p className="font-sail text-px-18">{props.description}</p>
+        <h1 className=" font-sail text-px-18">
+          Date:{" "}
+          <span className=" text-px-16" style={{ fontWeight: "bold" }}>
+            {props.date}
+          </span>
+        </h1>
+        <h1 className=" font-sail text-px-18">
+          Time:{" "}
+          <span
+            className="font-kaushanScript text-px-16"
+            style={{ fontWeight: "bold" }}
+          >
+            {props.time}
+          </span>
+        </h1>
+        <h1 className=" break-words hyphens-auto break-all whitespace-normal text-px-18 font-sail">
+          Venu: <span className="font-kaushanScript">{props.venue}</span>
+        </h1>
         <div className="w-full flex justify-center items-center">
           <Button
-            className="bg-textgreen hover:bg-textgreen"
+            className="bg-textPink hover:bg-textgreen"
             onClick={() => handleOpen()}
           >
             Show Maps

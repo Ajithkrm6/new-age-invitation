@@ -26,40 +26,6 @@ export interface HerSectionProps {
 }
 
 export const HeroSection = () => {
-  // const ref = useRef(null);
-  // const isInView = useInView(ref, { once: false, amount: 0.4 });
-
-  // const itemVariants = {
-  //   hidden: { opacity: 0, y: 50 },
-  //   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-  // };
-
-  // const imageVariants = {
-  //   hidden: { scale: 0.8, opacity: 0 },
-  //   visible: { scale: 1, opacity: 1, transition: { duration: 1 } },
-  // };
-
-  // const slideUpVariants = {
-  //   hidden: { opacity: 0, y: "100%" },
-  //   visible: {
-  //     opacity: 1,
-  //     y: "0%",
-  //     transition: {
-  //       duration: 3,
-  //       ease: "easeOut",
-  //     },
-  //   },
-  // };
-
-  // const containerVariants = {
-  //   hidden: {},
-  //   visible: {
-  //     transition: {
-  //       staggerChildren: 0.2,
-  //     },
-  //   },
-  // };
-
   const { ref, inView } = useInView({
     triggerOnce: false, // Only trigger the animation once
     threshold: 0.5, // Trigger when 50% of the section is in view
@@ -84,11 +50,11 @@ export const HeroSection = () => {
         className="w-[90%] h-[90%] flex gap-3 flex-col justify-center items-center"
       >
         <motion.div className="flex justify-center items-center flex-col">
-          <motion.h1 className="font-sail text-px-36 md:text-px-70">
+          <motion.h1 className="font-sarina text-px-26 text-textgreen md:text-px-50">
             Goutham & Bhavani
           </motion.h1>
           <motion.h1
-            className="font-jostSemiBold text-textgreen"
+            className="font-jostSemiBold text-textgreen text-px-14"
             // variants={slideUpVariants}
           >
             We Are Getting Married on December 11th 2024
@@ -96,11 +62,11 @@ export const HeroSection = () => {
           <motion.div className="w-[70%] flex justify-center items-center">
             <DaysCounter targetDate="12-11-2024" />
           </motion.div>
-          <motion.div
-
-          // variants={slideUpVariants}
-          >
+          <motion.div className="w-full flex flex-col justify-center  items-center">
             <MusicButton />
+            <p className="text-textgreen text-px-12 font-jostSemiBold">
+              (Tap the button for musical experience)
+            </p>
           </motion.div>
         </motion.div>
       </motion.div>

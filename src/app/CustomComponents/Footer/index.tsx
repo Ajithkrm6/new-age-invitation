@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import fb from "../../../../public/images/fb.svg";
 import insta from "../../../../public/images/insta.svg";
@@ -11,7 +11,7 @@ export interface FooterProps {
   photogphrDetails?: {
     photoghprFirmName?: string;
     description?: string;
-    avatar?: string;
+    avatar?: StaticImageData | string;
     contactnumber?: number;
     address?: string;
     website?: string;
@@ -23,7 +23,7 @@ export interface FooterProps {
     companyName?: string;
     description?: string;
     email?: string;
-    avtar?: string;
+    avtar?: StaticImageData | string;
     contactnumber?: number;
     address?: string;
     website?: string;
@@ -41,7 +41,13 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
         <div className="grid grid-cols-[15%,85%] justify-center items-center gap-2">
           <div className=" h-full justify-start md:flex flex-col items-end pt-3">
             <Avatar>
-              <AvatarImage src={photogphrDetails?.avatar} />
+              <AvatarImage
+                src={
+                  typeof photogphrDetails?.avatar === "string"
+                    ? photogphrDetails.avatar
+                    : photogphrDetails?.avatar?.src
+                }
+              />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>
@@ -91,7 +97,14 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
         <div className="grid grid-cols-[15%,85%] justify-center items-center gap-2">
           <div className=" h-full justify-start md:flex flex-col items-end pt-2">
             <Avatar>
-              <AvatarImage src={devDetails?.avtar} />
+              <AvatarImage
+                className="bg-transparent"
+                src={
+                  typeof devDetails?.avtar === "string"
+                    ? devDetails.avtar
+                    : devDetails?.avtar?.src
+                }
+              />
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
           </div>

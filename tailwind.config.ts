@@ -25,6 +25,7 @@ const config: Config = {
         jostSemiBold: ["var(--font-jost-semibold)"],
         karla: ["var(--font-karla)"],
         ephesis: ["var(--font-ephesis)"],
+        sarina: ["var(--font-sarina)"],
       },
       fontSize: {
         "px-2": "0.125rem",
@@ -80,7 +81,10 @@ const config: Config = {
       },
       colors: {
         textgreen: "#3C552D",
-
+        textDarkBlue: "#2A3663",
+        textLightGreen: "#ABBA7C",
+        textPink: "#CA7373",
+        textDarkPink: "#D76C82",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         lightBrownBg: "rgb(59 21 2)",
