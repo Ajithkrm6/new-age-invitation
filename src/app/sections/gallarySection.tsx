@@ -16,8 +16,8 @@ const Section = styled(motion.section)({
 });
 
 const slides = [
-  "/images/Gu&B1.jpg",
-  "/images/Gu&B2.jpg",
+  "/images/G&B1.jpg",
+  "/images/G&B2.jpg",
   "/images/G&B3.jpg",
   "/images/G&B4.jpg",
   "/images/G&B5.jpg",
@@ -28,6 +28,7 @@ const slides = [
   "/images/G&B10.jpg",
   "/images/G&B11.jpg",
   "/images/G&B12.jpg",
+  "/images/G&B13.jpg",
 ];
 
 export const GallarySection = () => {
