@@ -31,7 +31,7 @@ export default function Home() {
           description: "The Dream Memory Photography",
           address: "Visakhapatnam",
           contactnumber: 9618630716,
-          email: "TheDreamMemoryPhotography@gmail.com",
+          email: "THEDREAMMEMORIES.TDM2023@GMAIL.COM",
           instagram:
             "https://www.instagram.com/tdm_photography2023?igsh=MXI5NmxnbWRvaGd6bg==",
         }}
