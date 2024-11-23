@@ -4,6 +4,7 @@ import { styled } from "@mui/system";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import howItStartedImg from "../../../public/images/howItStarted1.jpg";
 
 const Section = styled(motion.section)({
   height: "100vh",
@@ -47,7 +48,7 @@ export const OurStorySection = () => {
             <div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
               <Image
                 alt="couple"
-                src="/images/his.jpg"
+                src={howItStartedImg}
                 width={400}
                 height={100}
                 className="object-cover w-full rounded-md"
