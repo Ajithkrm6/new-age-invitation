@@ -10,7 +10,7 @@ export interface CarouselProps {
 
 export default function Carousel({ slideData }: CarouselProps) {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 1000,
     slidesToShow: 4,

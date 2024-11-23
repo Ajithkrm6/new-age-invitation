@@ -25,7 +25,7 @@ export const VideoSection = () => {
   return (
     <Section className="flex justify-center items-center">
       <div className="w-[95%] h-[95%] bg-white bg-opacity-10 overflow-y-auto backdrop-blur-md flex justify-center  items-center rounded-md">
-        <div className="w-full h-full flex justify-center items-center rounded-md">
+        <div className="w-[95%] h-[95%] flex justify-center items-center rounded-md">
           {isClient && (
             <ReactPlayer
               url="https://www.youtube.com/watch?v=dF5XY1by5jQ"

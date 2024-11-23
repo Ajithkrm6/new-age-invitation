@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { styled } from "@mui/system";
 import { HeroSection } from "./sections/heroSection1";
 import { MessagesSection } from "./sections/messageSection";
 import { GallarySection } from "./sections/gallarySection";

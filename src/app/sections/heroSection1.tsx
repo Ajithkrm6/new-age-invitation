@@ -5,7 +5,7 @@ import { MusicButton } from "../CustomComponents/MusicButton";
 import Image from "next/image";
 import { DaysCounter } from "../CustomComponents/DaysCounter";
 import { motion } from "framer-motion";
-import heroCloseup from "../../../public/images/heroCloseup.png";
+import heroCloseup from "../../../public/images/heroCloseUp2.jpg";
 import { useInView } from "react-intersection-observer";
 
 const Section = styled(motion.section)({
@@ -34,7 +34,7 @@ export const HeroSection = () => {
   return (
     <Section
       // variants={containerVariants}
-      className="flex flex-col justify-center items-center md:flex-row   "
+      className="flex flex-col justify-center items-center md:flex-row"
     >
       <motion.div
         ref={ref} // Add the reference for intersection observer

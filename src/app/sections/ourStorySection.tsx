@@ -47,7 +47,7 @@ export const OurStorySection = () => {
             <div className="relative w-[250px] md:w-[430px] lg:w-[403px]">
               <Image
                 alt="couple"
-                src="/images/howItStrd.jpg"
+                src="/images/his.jpg"
                 width={400}
                 height={100}
                 className="object-cover w-full rounded-md"
