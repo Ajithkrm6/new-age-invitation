@@ -28,7 +28,7 @@ export const VideoSection = () => {
         <div className="w-[95%] h-[95%] flex justify-center items-center rounded-md">
           {isClient && (
             <ReactPlayer
-              url="https://www.youtube.com/watch?v=dF5XY1by5jQ"
+              url="https://www.youtube.com/watch?v=Ah5FR_cdosw"
               controls={true}
               width="100%"
               height="100%"
