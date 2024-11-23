@@ -7,6 +7,7 @@ import { VenuSection } from "./sections/venuSection";
 import { OurStorySection } from "./sections/ourStorySection";
 import mainBg from "../../public/images/mainBg3.png";
 import hexify from "../../public/images/hexifylogo.png";
+import tdmLogo from "../../public/images/TdmL.png";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <VenuSection />
       <Footer
         photogphrDetails={{
+          avatar: tdmLogo,
           photoghprFirmName: "TDM Photography",
           description: "The Dream Memory Photography",
           address: "Visakhapatnam",

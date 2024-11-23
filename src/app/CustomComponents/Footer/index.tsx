@@ -42,6 +42,7 @@ export const Footer = ({ photogphrDetails, devDetails }: FooterProps) => {
           <div className=" h-full justify-start md:flex flex-col items-end pt-3">
             <Avatar>
               <AvatarImage
+                className="bg-white"
                 src={
                   typeof photogphrDetails?.avatar === "string"
                     ? photogphrDetails.avatar
