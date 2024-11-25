@@ -20,9 +20,9 @@ export default function Home() {
     >
       <HeroSection />
       <OurStorySection />
-      <MessagesSection />
       <GallarySection />
       <VideoSection />
+      <MessagesSection />
       <VenuSection />
       <Footer
         photogphrDetails={{
