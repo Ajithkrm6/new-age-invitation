@@ -63,16 +63,16 @@ export const OurStorySection = () => {
             className="text-textgreen text-px-26 font-ephesis break-words hyphens-auto"
             style={{ fontWeight: "bold" }}
           >
-            In 2017, Over the years, we&apos;ve walked through life
-            together—filled with laughter, occasional arguments, and the
-            challenging journey of winning our familie&apos;s hearts. Though our
-            path hasn&apos;t always been smooth, every challenge along the way
-            has made our love stronger and stronger. From leaving behind comfort
-            zones to embracing new experiences, we&apos;ve stood by each other
-            with unwavering belief in our journey. Through every test, one thing
-            has remained constant: our belief in one another. We fought, we
-            loved, we grew, and now were ready to embrace forever, cherishing
-            every step that brought us here.
+            Over the years, we&apos;ve walked through life together—filled with
+            laughter, occasional arguments, and the challenging journey of
+            winning our familie&apos;s hearts. Though our path hasn&apos;t
+            always been smooth, every challenge along the way has made our love
+            stronger and stronger. From leaving behind comfort zones to
+            embracing new experiences, we&apos;ve stood by each other with
+            unwavering belief in our journey. Through every test, one thing has
+            remained constant: our belief in one another. We fought, we loved,
+            we grew, and now were ready to embrace forever, cherishing every
+            step that brought us here.
           </p>
           <div className="pt-4">
             <h1
