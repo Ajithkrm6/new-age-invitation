@@ -9,9 +9,10 @@ import reception from "../../../public/images/reception1.jpg";
 import dinner from "../../../public/images/Dinner.jpg";
 import muhurtham from "../../../public/images/muhurtham.jpg";
 const Section = styled(motion.section)({
-  height: "100vh",
+  height: "auto",
+  paddingTop: "15px",
   width: "100%",
-  overflowY: "auto",
+  // overflowY: "auto",
   marginBottom: "10px",
   scrollbarWidth: "none", // For Firefox
   msOverflowStyle: "none", // For Internet Explorer and Edge

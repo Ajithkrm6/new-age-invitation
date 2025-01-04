@@ -9,7 +9,7 @@ import heroCloseup from "../../../public/images/heroCloseUp2.jpg";
 import { useInView } from "react-intersection-observer";
 
 const Section = styled(motion.section)({
-  height: "100vh",
+  height: "auto",
   width: "100%",
   overflowY: "auto",
   scrollbarWidth: "none", // For Firefox

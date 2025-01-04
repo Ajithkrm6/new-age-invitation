@@ -13,7 +13,7 @@ import { Modal, Typography, Box } from "@mui/material";
 import { motion } from "framer-motion";
 
 const Section = styled(motion.section)({
-  height: "100vh",
+  height: "auto",
   width: "100%",
   overflowY: "auto",
   scrollbarWidth: "none", // For Firefox

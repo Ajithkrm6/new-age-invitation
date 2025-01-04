@@ -190,3 +190,21 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .slick-prev,
+  .slick-next {
+    top: 100% !important;
+  }
+  .slick-prev::before,
+  .slick-next::before {
+    color: #ca7373 !important;
+  }
+  .slick-prev {
+    left: 0px !important;
+  }
+
+  .slick-next {
+    right: 0px !important;
+  }
+}
